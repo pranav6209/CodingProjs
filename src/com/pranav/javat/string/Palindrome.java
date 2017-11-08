@@ -1,8 +1,8 @@
 package com.pranav.javat.string;
 
-public class ReverseString {
+public class Palindrome {
 
-	public static String reverseString(String str) {
+	public static boolean checkForPelindrome(String str) {
 
 		StringBuffer sb = new StringBuffer();
 
@@ -13,19 +13,23 @@ public class ReverseString {
 
 			// appending last character with each iteration.
 			sb.append(ch[i]);
-		}
 
+		}
 		
 		// sb is object so we have to convert it to String.
 		
 		//The toString() method returns the string representation of the object.
-		return sb.toString();
-
+		if (str.equals(sb.toString())) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public static void main(String[] args) {
 
-		System.out.println(ReverseString.reverseString("my name is khan"));
+		// Input is case sensitive.
+		System.out.println(checkForPelindrome("abA"));
 
 	}
 
