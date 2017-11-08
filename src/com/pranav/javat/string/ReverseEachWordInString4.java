@@ -1,6 +1,6 @@
 package com.pranav.javat.string;
 
-public class ReverseEachWordInString {
+public class ReverseEachWordInString4 {
 	
 	public static String reverseWord(String str) {
 

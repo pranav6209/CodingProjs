@@ -1,6 +1,6 @@
 package com.pranav.javat.string;
 
-public class CapitalizeEachWordInString {
+public class CapitalizeEachWordInString3 {
 
 	public static String capitalizeWord(String str) {
 
