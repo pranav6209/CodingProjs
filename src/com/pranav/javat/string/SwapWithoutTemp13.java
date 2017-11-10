@@ -2,9 +2,10 @@ package com.pranav.javat.string;
 
 public class SwapWithoutTemp13 {  
     public static void main(String args[]) {  
-        String a = "Love";  
-        String b = "You";  
+        String a = "Pranav";  
+        String b = "Patel";  
         System.out.println("Before swap: " + a + " " + b);  
+        
         a = a + b;  
         b = a.substring(0, a.length() - b.length());  
         a = a.substring(b.length());  
