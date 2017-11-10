@@ -7,46 +7,21 @@ package com.pranav.javat.string;
  */
 
 public class ToggleEachWordInString5 {
-	
-	
-	public static String reverseWord(String str) {
-
-		StringBuffer sb = new StringBuffer();
-		
-		String[] word = str.split("\\s");
-
-		for (String w : word) {
-			
-		StringBuffer sb1 = new StringBuffer();
-			
-			char[] ch = w.toCharArray();
-
-			for (int i = ch.length - 1; i >= 0; i--) {
-				
-				sb1.append(ch[i]);
-
-			}
-
-			sb.append(sb1.toString()).append(" ");
-
-		}
-
-		return sb.toString();
-
-	}
 
 	public static String toggleWord(String str) {
 
 		StringBuffer sb = new StringBuffer();
 
+		// split the string with white space
 		String[] words = str.split("\\s");
 
 		for (String w : words) {
-
+			// get the first char
 			String first = w.substring(0, 1);
-
+			// get rest of the str
 			String afterFirst = w.substring(1);
 
+			// convert first char to lower case and rest of the str to upper case
 			sb.append(first.toLowerCase()).append(afterFirst.toString().toUpperCase()).append(" ");
 
 		}

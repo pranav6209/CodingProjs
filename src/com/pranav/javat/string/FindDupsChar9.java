@@ -26,7 +26,7 @@ public class FindDupsChar9 {
 
 			if (map.containsKey(ch)) {
 
-				// map contains character then store that and its lates value
+				// map contains character then store that and its latest value.map.get(key) method return the value of the key
 				map.put(ch, map.get(ch) + 1);
 
 			}

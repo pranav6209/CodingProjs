@@ -29,9 +29,10 @@ public class PercentageOfUpperCaseLowerCase8 {
 		// Iterate through an array and check for uppercase, lowercase, digits and special characters
 		for (int i = 0; i < ch.length; i++) {
 
-			// use Character class to use boolen methods
+			// use Character class to use boolean methods
 			if (Character.isUpperCase(ch[i])) {
 
+				// increase the count
 				upperCase++;
 
 			}

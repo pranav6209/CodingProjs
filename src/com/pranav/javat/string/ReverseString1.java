@@ -6,6 +6,7 @@ public class ReverseString1 {
 
 		StringBuffer sb = new StringBuffer();
 
+		// convert String to char array
 		char[] ch = str.toCharArray();
 
 		// Iterate in reverse end to beginning

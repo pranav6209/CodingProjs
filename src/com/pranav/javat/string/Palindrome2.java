@@ -5,7 +5,7 @@ public class Palindrome2 {
 	public static boolean checkForPelindrome(String str) {
 
 		StringBuffer sb = new StringBuffer();
-
+		// convert String to char array
 		char[] ch = str.toCharArray();
 
 		// Iterate in reverse end to beginning
