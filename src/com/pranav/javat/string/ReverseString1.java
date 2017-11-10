@@ -25,7 +25,7 @@ public class ReverseString1 {
 
 	public static void main(String[] args) {
 
-		System.out.println(ReverseString1.reverseString("my name is khan"));
+		System.out.println(ReverseString1.reverseString("my name is Pranav"));
 
 	}
 
