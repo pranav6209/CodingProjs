@@ -8,7 +8,9 @@ public class AnagramString7 {
 	 * Two strings are called anagrams if they contain same set of characters
 	 * but in different order. "keep ? peek", "Mother In Law - Hitler Woman".
 	 * 
-	 * if we are not ignoring white space than we have to count spaces as well
+	 * Assuming that comparison is not case sensitive and white space is not significant.
+	 * 
+	 *  Converting to lower case and removing white spaces.
 	 */
 
 	private static void checkAnagram(String s1, String s2) {

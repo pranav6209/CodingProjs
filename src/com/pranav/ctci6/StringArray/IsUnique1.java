@@ -25,7 +25,7 @@ public class IsUnique1 {
 
 			// char ch= str.charAt(i); // returns char at specific index
 
-			int val = str.charAt(i); // returns ascii value.
+			int val = str.charAt(i); // returns ASCII value.
 
 			/*
 			 * If the value is already true, string has duplicate characters,
