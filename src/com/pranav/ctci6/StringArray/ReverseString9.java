@@ -1,6 +1,6 @@
 package com.pranav.ctci6.StringArray;
 
-public class ReverseString {
+public class ReverseString9 {
 
 	public static boolean isRotation(String s1, String s2) {
 
