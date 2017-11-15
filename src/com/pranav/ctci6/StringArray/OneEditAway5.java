@@ -22,7 +22,7 @@ public class OneEditAway5 {
 
 		}
 
-		// Length-1... Removal
+		// Length-1... Removal -- Parameter second first.
 		else if (first.length() - 1 == second.length()) {
 
 			return oneEditInsert(second, first);
@@ -59,6 +59,8 @@ public class OneEditAway5 {
 		return true;
 	}
 
+	
+	//as we are reverting i/p string in Parameter, Longest String will be always s1.....
 	private static boolean oneEditInsert(String s1, String s2) {
 
 		// abcd --> acd
