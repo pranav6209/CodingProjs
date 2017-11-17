@@ -39,10 +39,10 @@ public class ReverseString9 {
 				// initializing mathcLegnth to 1.
 				int matchLength = 1;
 
-				// now iterate both the string with j
+				// now iterate both the string with j and increment matchLength
 				for (int j = 1; j < s2.length(); j++) {
 
-					// check same char
+					// if not same char break verify matchLength
 					if (s1.charAt(i + j) != s2.charAt(j)) {
 
 						break;
