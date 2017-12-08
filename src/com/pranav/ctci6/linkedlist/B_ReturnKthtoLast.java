@@ -1,9 +1,9 @@
 package com.pranav.ctci6.linkedlist;
 
-import com.pranav.ctci6.linkedlist.removeDuplicates1.node;
+
 
 //Simple Java program to find n'th node from end of linked list
-class ReturnKthtoLast
+class B_ReturnKthtoLast
 {
 	Node head; // head of the list
 
@@ -64,7 +64,7 @@ class ReturnKthtoLast
 
 	/* Drier program to test above methods */
 	public static void main(String[] args) {
-		ReturnKthtoLast llist = new ReturnKthtoLast();
+		B_ReturnKthtoLast llist = new B_ReturnKthtoLast();
 		llist.push(20);
 		llist.push(4);
 		llist.push(15);

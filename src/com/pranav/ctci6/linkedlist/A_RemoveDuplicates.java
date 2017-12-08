@@ -5,14 +5,14 @@ package com.pranav.ctci6.linkedlist;
 
 import java.util.HashSet;
 
-public class removeDuplicates1 
+public class A_RemoveDuplicates 
 {
 	static class node {
-		int val;
+		int data;
 		node next;
 
 		public node(int val) {
-			this.val = val;
+			this.data = val;
 		}
 	}
 
@@ -28,11 +28,11 @@ public class removeDuplicates1
 		node prev = null;
 		while (n != null) {
 			// If current value is seen before
-			if (hs.contains(n.val)) {
+			if (hs.contains(n.data)) {
 				// update the pointer
 				prev.next = n.next;
 			} else {
-				hs.add(n.val);
+				hs.add(n.data);
 
 				prev = n;
 			}
@@ -45,7 +45,7 @@ public class removeDuplicates1
 	/* Function to print nodes in a given linked list */
 	private static void printList(node head) {
 		while (head != null) {
-			System.out.print(head.val + " ");
+			System.out.print(head.data + " ");
 			head = head.next;
 		}
 	}
@@ -54,20 +54,20 @@ public class removeDuplicates1
 		/*
 		 * The constructed linked list is: 10->12->11->11->12->11->10
 		 */
-		node start = new node(10);
-		start.next = new node(12);
-		start.next.next = new node(11);
-		start.next.next.next = new node(11);
-		start.next.next.next.next = new node(12);
-		start.next.next.next.next.next = new node(11);
-		start.next.next.next.next.next.next = new node(10);
+		node n = new node(10);
+		n.next = new node(12);
+		n.next.next = new node(11);
+		n.next.next.next = new node(11);
+		n.next.next.next.next = new node(12);
+		n.next.next.next.next.next = new node(11);
+		n.next.next.next.next.next.next = new node(10);
 
 		System.out.println("Linked list before removing duplicates :");
-		printList(start);
+		printList(n);
 
-		removeDuplicate(start);
+		removeDuplicate(n);
 
 		System.out.println("\nLinked list after removing duplicates :");
-		printList(start);
+		printList(n);
 	}
 }
