@@ -2,6 +2,10 @@ package com.pranav.ctci6.big0;
 
 /*
 http://javarevisited.blogspot.com/2015/03/how-to-reverse-array-in-place-in-java.html
+
+
+https://www.youtube.com/watch?v=W-090WziKAs
+
 */
 public class ReverseArray {
 	

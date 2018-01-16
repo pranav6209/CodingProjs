@@ -60,9 +60,9 @@ public class I_AnimalShelter {
 			Cat cat = cats.peek();
 			/* Whichever is older entry, return that */
 			if (dog.isOlderThen(cat)) {
-				return dogs.poll();
+				return dequeueDog();
 			} else {
-				return cats.poll();
+				return dequeueCat();
 			}
 		}
 
@@ -82,15 +82,6 @@ public class I_AnimalShelter {
 		 */
 		public Cat dequeueCat() {
 			return cats.poll();
-		}
-
-		/**
-		 * Method to get the size of Animal shelter
-		 * 
-		 * @return {@link int}
-		 */
-		public int size() {
-			return dogs.size() + cats.size();
 		}
 
 		/**
@@ -169,6 +160,10 @@ public class I_AnimalShelter {
 			public Dog(String name) {
 				super(name);
 			}
+		}
+		
+		public static void main(String[] args) {
+			
 		}
 
 	}
