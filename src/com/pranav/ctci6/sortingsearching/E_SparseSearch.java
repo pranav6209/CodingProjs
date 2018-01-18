@@ -1,6 +1,6 @@
 package com.pranav.ctci6.sortingsearching;
 
-public class D_SparseSearch {
+public class E_SparseSearch {
 
 	int search(String[] strs, String str, int start, int last) {
 		if (start > last)
@@ -55,7 +55,7 @@ public class D_SparseSearch {
 	    // input Search String
 	    String searchString = "ide";
 	    
-	   D_SparseSearch ds = new D_SparseSearch();
+	   E_SparseSearch ds = new E_SparseSearch();
 	   
 	   ds.search(strs, searchString, 0, strs.length-1);
 	    
