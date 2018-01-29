@@ -7,7 +7,7 @@ package com.pranav.ctci6.StringArray;
  * @author pranavpatel
  *
  */
-public class OneEditAway5 {
+public class C_OneEditAway {
 
 	private static boolean oneEdit(String first, String second) {
 
