@@ -4,26 +4,31 @@ package com.pranav.javat.string;
  * My name is Pranav
  * mY nAME iS pRANAV 
  * 
+ *Steps To Remember
+ *
+ *		1. Reverse a String 
+ *		2. Toggle a String..
+ * 
  */
 
-public class ReverseToggleEachWordInString6 {
+public class F_ReverseToggleEachWordInString {
 	
 	// Reverse the word in the String..
 	public static String reverseWord(String str) {
 
 		StringBuffer sb = new StringBuffer();
 		// split the string with whitespace
-		String[] word = str.split("\\s");
+		String[] words = str.split("\\s");
 
-		for (String w : word) {
+		for (int i = 0; i < words.length; i++) {	
 			
 		StringBuffer sb1 = new StringBuffer();
 			
-			char[] ch = w.toCharArray();
+			char[] ch = words[i].toCharArray();
 			// reverse iteration
-			for (int i = ch.length - 1; i >= 0; i--) {
+			for (int j = ch.length - 1; j >= 0; j--) {
 				// Append last char 
-				sb1.append(ch[i]);
+				sb1.append(ch[j]);
 
 			}
 
@@ -42,11 +47,11 @@ public class ReverseToggleEachWordInString6 {
 		// get the words from the reversed String
 		String[] words = reverseWord(str).split("\\s");
 
-		for (String w : words) {
+		for (int i = 0; i <words.length; i++) {	
 			// get the first char
-			String first = w.substring(0, 1);
+			String first = words[i].substring(0, 1);
 			// get rest of the str
-			String afterFirst = w.substring(1);
+			String afterFirst = words[i].substring(1);
 			// convert first char to lower case and rest of the str to upper case
 			sb.append(first.toLowerCase()).append(afterFirst.toString().toUpperCase()).append(" ");
 

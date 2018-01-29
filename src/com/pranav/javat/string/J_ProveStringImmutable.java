@@ -1,6 +1,6 @@
  	package com.pranav.javat.string;
 
-public class ProveStringImmutable10 {
+public class J_ProveStringImmutable {
 	
 	/*
 	 * 

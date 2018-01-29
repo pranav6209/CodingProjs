@@ -1,6 +1,6 @@
 package com.pranav.javat.string;
 
-public class RemoveAllSpace11 {  
+public class K_RemoveAllSpace {  
     public static void main(String[] args) {  
         String str = "India     Is My    Country";  
         //1st way  // using built in method  

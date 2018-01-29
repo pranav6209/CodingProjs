@@ -3,6 +3,15 @@ package com.pranav.javat.string;
 /*
  * Problem with this is it count its case sensitive
  * 
+ * Logic 
+ * 		1. Replace all spaces and remove case sensitivity
+ * 		2. initialize Map <Charachter,Integer>
+ * 		3.	convert String to char array
+ * 		4. Iterate through chararray and if char is repeating increase its value by 1 else just insert char with initial value 1 in map
+ * 		5. make the set to iterate through key,
+ * 		6. get the char with value more than 1 .
+ * 
+ * 
  */
 
 
@@ -10,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class FindDupsChar9 {
+public class I_FindDupsChar {
 
 	private static void findDups(String str) {
 
@@ -22,12 +31,12 @@ public class FindDupsChar9 {
 		
 		char[] charArray = ns.toCharArray();
 
-		for (char ch : charArray) {
+		for (int i=0;i<charArray.length;i++) {
 
-			if (map.containsKey(ch)) {
+			if (map.containsKey(charArray[i])) {
 
 				// map contains character then store that and its latest value.map.get(key) method return the value of the key
-				map.put(ch, map.get(ch) + 1);
+				map.put(charArray[i], map.get(charArray[i]) + 1);
 
 			}
 
@@ -35,7 +44,7 @@ public class FindDupsChar9 {
 
 			{
 				// else store character and 1
-				map.put(ch, 1);
+				map.put(charArray[i], 1);
 
 			}
 

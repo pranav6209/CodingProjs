@@ -3,7 +3,16 @@ package com.pranav.javat.string;
 public class A_ReverseString {
 
 	public static String reverseString(String str) {
-
+		
+		
+		
+/*		
+ * Steps To Remember
+ * 
+ * 		1.  String to chatArray
+		2.	 iterate in reverse  i= array.legnth-1 to >=0
+		3. append to string buffer
+*/
 		StringBuffer sb = new StringBuffer();
 
 		// convert String to char array

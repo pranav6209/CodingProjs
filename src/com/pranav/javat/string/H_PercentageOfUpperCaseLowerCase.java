@@ -7,9 +7,17 @@ package com.pranav.javat.string;
  * @author pranavpatel
  * 
  * Java program to find the percentage of uppercase, lowercase, digits and special characters in a string
+ * 
+ * Logic 
+ * 		1. convert String to char Array
+ * 		2. check if each char is Upper case, Lower Case, Digit or special Char using Charachter.isUpperCase(ch[i]),
+ * 			Character.isLowerCase(ch[i]) and Character.isDigit(ch[i]) method
+ * 		3. Increase the counter when each matches found.
+ * 		4. count the percentage  by noofuppercase/string legnth * 100
+ * 
  *
  */
-public class PercentageOfUpperCaseLowerCase8 {
+public class H_PercentageOfUpperCaseLowerCase {
 
 	private static void checkPercentage(String str) {
 

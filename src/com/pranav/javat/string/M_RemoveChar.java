@@ -1,6 +1,6 @@
 package com.pranav.javat.string;
 
-public class RemoveChar14 {  
+public class M_RemoveChar {  
     public static void main(String[] args) {  
               String str = "India is my country";  
               System.out.println(charRemoveAt(str, 7));  

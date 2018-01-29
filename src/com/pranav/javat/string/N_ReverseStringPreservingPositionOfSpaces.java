@@ -4,9 +4,20 @@ package com.pranav.javat.string;
  * 
  * http://javaconceptoftheday.com/how-to-reverse-the-string-with-preserving-the-position-of-spaces/
  * 
+ * 
+ * 
+ * Logic 
+ * 		1. create result array of same size as i/p string array.
+ * 		2. if i/p array has a space at specific index, insert spaces in result array at the same index.
+ * 		3.	iterate i/p array in reverse,
+ * 					 if there is no space in i/p array and a if space in result array, decrease the index of result array as we have to preserve spaces.
+ * 					 if there is no space in i/p array and a if  no space in result array, put the i/p array char in to result array.
+ * 
+ * 
  */
 
-public class ReverseStringPreservingPositionOfSpaces12
+
+public class N_ReverseStringPreservingPositionOfSpaces
 {    
 	
 	private static void reverseString(String inputString) {

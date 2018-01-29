@@ -1,6 +1,6 @@
 package com.pranav.javat.string;
 
-public class SwapWithoutTemp13 {  
+public class L_SwapWithoutTemp {  
     public static void main(String args[]) {  
         String a = "Pranav";  
         String b = "Patel";  

@@ -1,7 +1,14 @@
 package com.pranav.javat.string;
 
-public class Palindrome2 {
-
+public class B_Palindrome {
+	/*		
+	 * Steps To Remember
+	 * 
+	 * 		1.  String to chatArray
+			2.	 iterate in reverse  i= array.legnth-1 to >=0
+			3. append to string buffer
+			4. compare the reverse String with original string using compareTo()...
+	*/
 	public static boolean checkForPelindrome(String str) {
 
 		StringBuffer sb = new StringBuffer();

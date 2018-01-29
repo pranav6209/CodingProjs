@@ -2,7 +2,8 @@ package com.pranav.javat.string;
 
 import java.util.Arrays;
 
-public class AnagramString7 {
+
+public class G_AnagramString {
 
 	/*
 	 * Two strings are called anagrams if they contain same set of characters
@@ -11,6 +12,13 @@ public class AnagramString7 {
 	 * Assuming that comparison is not case sensitive and white space is not significant.
 	 * 
 	 *  Converting to lower case and removing white spaces.
+	 *  
+	 *   Logic
+ *
+ *		1. replace white space
+ *		2. check the length of the string if it is not same not anagram
+ *		3.	else convert a strings to char array and sort
+ *		4.  compare two arrays, if it is same anagram else not.
 	 */
 
 	private static void checkAnagram(String s1, String s2) {
@@ -32,6 +40,7 @@ public class AnagramString7 {
 			// convert string to lover case and store it to character array
 			char[] array1 = str1.toLowerCase().toCharArray();
 			char[] array2 = str2.toLowerCase().toCharArray();
+		
 
 			// sort the array
 
