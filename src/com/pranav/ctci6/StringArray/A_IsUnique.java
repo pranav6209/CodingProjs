@@ -39,17 +39,16 @@ public class A_IsUnique {
 			}
 
 			else {
-				char_set[val] = true; // make array value true for char in
-										// string
+				char_set[val] = true; // make array value true for char in  string
 			}
 		}
-
+		// if iteration is finished without returning false from for loop means String is unique and we have to return true
 		return true;
 	}
 
 	public static void main(String[] args) {
 
-		System.out.println(isUniqueChars("My name"));
+		System.out.println(isUniqueChars("my name"));
 
 	}
 
