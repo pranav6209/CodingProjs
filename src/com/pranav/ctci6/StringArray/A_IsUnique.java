@@ -20,7 +20,7 @@ public class A_IsUnique {
 			return false;
 		}
 
-		boolean[] char_set = new boolean[128]; // generates array with initial value false.
+		boolean[] char_set = new boolean[128]; //  generates array with initial value false.
 
 		for (int i = 0; i < str.length(); i++) { // iterate through String
 
