@@ -8,11 +8,12 @@ package com.pranav.ctci6.StringArray;
  * 
  */
 
-public class RotateMatrix7 {
+public class G_RotateMatrix {
 
 	private static int[][] rotate(int[][] matrix) {
 
 		if (matrix.length == 0 || matrix.length != matrix[0].length)
+			
 			System.out.println("Improper Matrix");
 
 		int matrixLegnth = matrix.length;
@@ -21,7 +22,7 @@ public class RotateMatrix7 {
 
 		for (int layer = 0; layer < matrixLegnth / 2; layer++) {
 
-			// we need there variable first, last and offset to which will use go from last element to next element.
+			// we need three pointer first, last and offset to which will use go from last element to next element.
 			
 			int first = layer; // 0 //1
 
@@ -44,7 +45,7 @@ public class RotateMatrix7 {
 				matrix[last - offset][first] = matrix[last][last - offset];//to access [3,3],[3,2],[3,1] elements
 
 				// right ->bottom
-				matrix[last][last - offset] = matrix[i][last];//to access [0,3,[1,3],[2,3] elements
+				matrix[last][last - offset] = matrix[i][last];//to access [0,3] [1,3],[2,3] elements
 
 				// top->right
 				matrix[i][last] = top; // right <-saved top

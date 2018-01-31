@@ -1,7 +1,18 @@
 package com.pranav.ctci6.StringArray;
 
 public class A_IsUnique {
+	/*
+	Time Complexity is O(N) and as there is no additional space used Space Complexity is O(1)
+	
+	Logic
+	
+	1. ASCII Value logic
+	2. if the String is longer than 128 char are repeating 
+	3. if not create a boolean array (all has false initially)
+	4. get the ASCII value by charAt(i) method, for that ASCII value store true in array.
+	5. check true and false flag, if  flag is already true at particular position in array, char is repeating.
 
+*/	
 	private static boolean isUniqueChars(String str) {
 
 		/*

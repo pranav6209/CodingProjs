@@ -4,15 +4,21 @@ package com.pranav.ctci6.StringArray;
  * 
  * https://www.javatpoint.com/difference-between-arraylist-and-vector
  * 
+ * Logic...
+ * 
+ * 1. Book page 205
+ * 
+ * 
  */
 
-public class ZeroMatrix8 {
+public class H_ZeroMatrix {
 
 	private static int[][] setZeroa(int[][] matrix) {
 
 		boolean rowHasZero = false;
 		boolean columnHasZero = false;
-
+		// Think Like i is a iteration for row and j for column;
+		
 		// check if first row has zero
 
 		for (int j = 0; j < matrix[0].length; j++) {
@@ -41,21 +47,23 @@ public class ZeroMatrix8 {
 
 		}
 
-		// check in the rest of matrix if any position contain zero.
+		// check in the rest of matrix if any position contain zero. starting i=1
 
 		for (int i = 1; i < matrix.length; i++) {
 
 			for (int j = 1; j < matrix[0].length; j++) {
 
-				// if any position contains zero flag that row and column value
-				// to zero
+				// if any position contains zero, flag that row and column value to zero
 				if (matrix[i][j] == 0) {
 
 					/*
 					 * let says in over matrix at index [1,3] we have 0 we will
 					 * first set matrix[1,0] and [0,3] to 0 see below matrix
 					 * 
-					 * 1, 0, 3, 0 0, 6, 7, 0 9, 10, 11, 12 13, 14, 15, 16
+					 * 1, 		0,		3, 	0 
+					 * 0, 		6, 	7, 	0 
+					 * 9, 		10, 11, 	12 
+					 * 13, 	14, 15, 	16
 					 * 
 					 */
 

@@ -1,6 +1,6 @@
 package com.pranav.ctci6.StringArray;
 
-public class StringCompression6 {
+public class F_StringCompression {
 
 	/* 
 	 * aabcccccaaa--->a2b1c5a3 
@@ -22,6 +22,7 @@ public class StringCompression6 {
 
 			if (i + 1 == str.length() || str.charAt(i) != str.charAt(i + 1)) { // i=0
 
+		//	if ( str.charAt(i) != str.charAt(i + 1)) { // i=0
 				compressed.append(str.charAt(i)); // a
 				compressed.append(countConsecutive);
 				countConsecutive = 0;
@@ -44,6 +45,6 @@ public class StringCompression6 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(compress("aabcccccaaa"));
+		System.out.println(compress("aabcccc"));
 	}
 }

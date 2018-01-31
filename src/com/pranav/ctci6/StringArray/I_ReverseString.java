@@ -1,6 +1,8 @@
 package com.pranav.ctci6.StringArray;
 
-public class ReverseString9 {
+public class I_ReverseString {
+	
+/*	Logic in the book...*/
 
 	public static boolean isRotation(String s1, String s2) {
 
@@ -16,25 +18,26 @@ public class ReverseString9 {
 
 	}
 
-	public static boolean isSubstring(String s1, String s2) {
+	public static boolean isSubstring(String s1s1, String s2) {
 
 		/*
 		 * s1=waterbottlewaterbottle; s2=erbottlewat
 		 */
 
 		// check if s1.length() is not less than s2
-		if (s1.length() < s2.length())
+		if (s1s1.length() < s2.length())
 			return false;
 
 		// if s1.length() == s2.length() after concatenation, both string
 		// content might be equal.
-		if (s1.length() == s2.length())
-			return s1.equals(s2);
+		if (s1s1.length() == s2.length())
+			// if length is same match the content and  return true or false based on that...
+			return s1s1.equals(s2);
 
-		for (int i = 0; i <= s1.length() - s2.length(); i++) {
+		for (int i = 0; i <= s1s1.length() - s2.length(); i++) {
 
-			// check for s1 char and s2 char are same.
-			if (s1.charAt(i) == s2.charAt(0)) {
+			// iterate s1s1 till we have a same char in s2
+			if (s1s1.charAt(i) == s2.charAt(0)) {
 
 				// initializing mathcLegnth to 1.
 				int matchLength = 1;
@@ -43,7 +46,7 @@ public class ReverseString9 {
 				for (int j = 1; j < s2.length(); j++) {
 
 					// if not same char break verify matchLength
-					if (s1.charAt(i + j) != s2.charAt(j)) {
+					if (s1s1.charAt(i + j) != s2.charAt(j)) {
 
 						break;
 					}
