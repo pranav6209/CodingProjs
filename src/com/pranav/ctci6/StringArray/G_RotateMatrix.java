@@ -33,7 +33,7 @@ public class G_RotateMatrix {
 			for (int i = first; i < last; i++) { 
 												
 
-				int offset = i - first; // 0 // first iteration do not think of subtracting offset
+				int offset = i - first; // 0 //1//2//3
 
 				// save top 
 				int top = matrix[first][i];   // to access [0,0],[0,1],[0,2] elements
