@@ -4,7 +4,13 @@ public class A_ReverseString {
 
 	public static String reverseString(String str) {
 		
+	// Printing an array with String
+	
+	//	https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array
 		
+	// Printing an array with char
+		
+	//https://stackoverflow.com/questions/13505274/java-println-with-char-array-gives-gibberish	
 		
 /*		
  * Steps To Remember

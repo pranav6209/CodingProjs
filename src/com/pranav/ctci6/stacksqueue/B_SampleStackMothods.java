@@ -14,6 +14,7 @@ public class B_SampleStackMothods {
 
 	}
 
+	//pointer
 	private Node top; // add and Remove from the top
 
 	// if top is null return true..

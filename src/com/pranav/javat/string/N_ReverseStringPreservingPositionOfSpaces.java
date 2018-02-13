@@ -1,5 +1,7 @@
 package com.pranav.javat.string;
 
+import java.util.Arrays;
+
 /*
  * 
  * http://javaconceptoftheday.com/how-to-reverse-the-string-with-preserving-the-position-of-spaces/
@@ -20,7 +22,7 @@ package com.pranav.javat.string;
 public class N_ReverseStringPreservingPositionOfSpaces
 {    
 	
-	private static void reverseString(String inputString) {
+	private static char [] reverseString(String inputString) {
 
 		// covert i/p string to Array
 		char[] inputArray = inputString.toCharArray();
@@ -49,10 +51,11 @@ public class N_ReverseStringPreservingPositionOfSpaces
 			if (inputArray[i] != ' ') {
 
 				if (resultArray[j] == ' ') {
-
+					// if resulat array has a space and i/p array doesn't
+					// decrease j and then swap the char.
 					j--;
 				}
-
+				// in any case this will execute.
 				resultArray[j] = inputArray[i];
 				j--;
 
@@ -60,17 +63,18 @@ public class N_ReverseStringPreservingPositionOfSpaces
 
 		}
 
-		System.out.println(inputString + " ---> " + String.valueOf(resultArray));
+		
+		return resultArray;
 
 	}
    
      
     public static void main(String[] args)
 	{
-		reverseString("I Am Not String");
+		System.out.println(reverseString("I Am Not String"));
+		
+		System.out.println(reverseString("JAVA JSP ANDROID"));
 
-		reverseString("JAVA JSP ANDROID");
-
-		reverseString("1 22 333 4444 55555");
+		System.out.println(reverseString("1 22 333 4444 55555"));
 	}
 }

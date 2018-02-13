@@ -39,7 +39,7 @@ public class I_ReverseString {
 			// iterate s1s1 till we have a same char in s2
 			if (s1s1.charAt(i) == s2.charAt(0)) {
 
-				// initializing mathcLegnth to 1.
+				// initializing matchLegnth to 1.
 				int matchLength = 1;
 
 				// now iterate both the string with j and increment matchLength

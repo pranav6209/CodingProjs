@@ -26,17 +26,21 @@ public class B_Palindrome {
 		// sb is object so we have to convert it to String.
 		
 		//The toString() method returns the string representation of the object.
-		if (str.equals(sb.toString())) {
+		/*		if (str.equals(sb.toString())) {
 			return true;
 		} else {
 			return false;
 		}
+		
+		*/
+		
+		return str.equals(sb.toString());	
 	}
 
 	public static void main(String[] args) {
 
 		// Input is case sensitive.
-		System.out.println(checkForPelindrome("abA"));
+		System.out.println(checkForPelindrome("aba"));
 
 	}
 

@@ -15,14 +15,14 @@ public class DistictSubstrings {
 			// consider when i=2 j will be 3 to support this we are using j<=length.
 			// Also substring (0,2 ) will print "pa"
 			for (int j = i+1; j <=length; j++) {
-				hs.add(string.substring(i,j));
-				System.out.println(hs);
+			//	hs.add(string.substring(i,j));
+				System.out.println(string.substring(i,j));
 			}
 		}
 		System.out.println("Total SubString" + hs.size());
 
 		
-		// this possible because its jut a string set
+		// this possible because its jut a string set //optional
 		for (String substring : hs) {
 
 			System.out.println(substring);

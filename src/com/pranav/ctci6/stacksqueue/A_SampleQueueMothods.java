@@ -14,6 +14,7 @@ public class A_SampleQueueMothods {
 
 	}
 
+	// both are pointer..
 	private Node head; // remove from the head ...
 	private Node tail; // add to tail...
 
@@ -59,8 +60,7 @@ public class A_SampleQueueMothods {
 
 		int data = head.data; // get head data
 
-		head = head.next; // move the head that will also remove head from
-							// Queue.
+		head = head.next; // move the head that will also remove head from  Queue.
 
 		if (head == null) {
 

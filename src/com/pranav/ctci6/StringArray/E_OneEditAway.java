@@ -66,6 +66,8 @@ public class E_OneEditAway {
 
 		int index1 = 0;
 		int index2 = 0;
+		
+		// while loop because we want to handle increment by our self.
 
 		while (index2 < s2.length() && index1 < s1.length()) {
 

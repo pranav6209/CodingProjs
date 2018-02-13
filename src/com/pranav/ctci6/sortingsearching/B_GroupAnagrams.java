@@ -40,7 +40,8 @@ public class B_GroupAnagrams {
 			
 			if (m.containsKey(s)) { 
 
-				// get the ket and ang
+				// here when we do get on map, it will return the list of String so to add string here we have to use 
+				// add method of list and not a put method.
 				m.get(s).add(strs[i]);
 
 			}

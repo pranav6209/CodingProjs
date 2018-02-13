@@ -2,7 +2,6 @@ package com.pranav.javat.string;
 
 import java.util.Arrays;
 
-
 public class G_AnagramString {
 
 	/*
@@ -65,7 +64,6 @@ public class G_AnagramString {
 	}
 
 	public static void main(String[] args) {
-
 		checkAnagram("Keep", "peek");
 		checkAnagram("Keep", "peeks");
 		checkAnagram("Mother In Law", "Hitler Woman");
