@@ -24,7 +24,7 @@ public class SwapFirstLastWords {
 	private static String[] swapWord(String str) {
 
 		// split the string with spaces to get word
-		String[] words = str.split(" ");
+		String[] words = str.split("");
 
 		System.out.println(words.length);
 

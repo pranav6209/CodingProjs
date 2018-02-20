@@ -4,9 +4,11 @@ public class A_sortedMerge {
 
 	void merge(int[] a, int[] b, int lastA, int lastB) {
 
-		int indexA = lastA - 1; // index of last element in Array A.
-		int indexB = lastB - 1;// index of last element in Array B
-		int indexMerged = lastA + lastB - 1; // Index of Merged Array
+		// [1,3,5]
+		// [2,4]
+		int indexA = lastA - 1; // index of last element in Array A //2
+		int indexB = lastB - 1;// index of last element in Array B //1
+		int indexMerged = lastA + lastB - 1; // Index of Merged Array //4
 
 		// we are replacing last element of the indexMerged with last bigger
 		// element between a and b
@@ -28,6 +30,12 @@ public class A_sortedMerge {
 			indexMerged--;
 		}
 
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
 	}
 
 }

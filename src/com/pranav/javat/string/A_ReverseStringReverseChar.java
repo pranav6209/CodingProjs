@@ -1,6 +1,6 @@
 package com.pranav.javat.string;
 
-public class A_ReverseString {
+public class A_ReverseStringReverseChar {
 
 	public static String reverseString(String str) {
 		
@@ -41,7 +41,7 @@ public class A_ReverseString {
 
 	public static void main(String[] args) {
 
-		System.out.println(A_ReverseString.reverseString("my name is Pranav"));
+		System.out.println(A_ReverseStringReverseChar.reverseString("my name is Pranav"));
 
 	}
 

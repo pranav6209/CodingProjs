@@ -4,7 +4,7 @@ package com.pranav.ctci6.sortingsearching;
 class BinarySearch
 {
 	// Returns index of x if it is present in arr[] else return -1
-	int binarySearch(int arr[], int searchElement) {
+	private static int binarySearch(int arr[], int searchElement) {
 		int start = 0, end = arr.length - 1;
 		while (start <= end) {
 			int middleIndex = (start + end) / 2;
@@ -28,10 +28,9 @@ class BinarySearch
 
 	// Driver method to test above
 	public static void main(String args[]) {
-		BinarySearch ob = new BinarySearch();
 		int []arr  = { 2, 3, 4, 10, 40,50,60,120,290,500,700 };
 		int x = 500;
-		int result = ob.binarySearch(arr, x);
+		int result = BinarySearch.binarySearch(arr, x);
 		if (result == -1)
 			System.out.println("Element not present");
 		else
