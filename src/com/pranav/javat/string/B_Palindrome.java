@@ -10,6 +10,7 @@ public class B_Palindrome {
 	 */
 	public static boolean checkForPelindrome(String str) {
 
+		
 		StringBuffer sb = new StringBuffer();
 		char[] ch = str.toCharArray();
 
