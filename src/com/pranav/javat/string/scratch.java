@@ -1,25 +1,26 @@
 package com.pranav.javat.string;
 
 public class scratch {
-	
-	
-	
-	public static String reverseString(String str){
-		
-		char [] arr = str.toCharArray();
+
+	public static String reverseString(String str) {
+
+		String[] strs = str.split("\\s");
 		StringBuffer sb = new StringBuffer();
-		
-		for ( int i=arr.length-1;i>=0;i--){
-			sb.append(arr[i]);
+
+		for (String s : strs) {
+
+			sb.append(s.substring(0, 1).toUpperCase());
+			sb.append(s.substring(1).toLowerCase());
+			sb.append(" ");
+
 		}
-		
+
 		return sb.toString();
-		
 	}
 
-	public static void main(String args[]){
-		
-		System.out.println(reverseString("My Name Is Pranav"));
+	public static void main(String args[]) {
+
+		System.out.println(reverseString("my nAme is pranav"));
 	}
-	
+
 }
